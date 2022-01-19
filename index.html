@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercitazione</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <!--Ultima versione di jQuery (minified) -->
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <!-- Ultima versione di jquery.validate (minfied) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+</head>
+<body >
+    
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ESERCITAZIONE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <button  type="button" class="btn btn-dark mr-5" onclick="loginEmail()">login</button>
+              </li>
+              <li class="nav-item">
+                <button  type="button" class="btn btn-dark" onclick="registraemail()">SignUp</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      
+      <!-- H1 -->
+      
+      <h1 class="mt-5 text-center">My Spa</h1>
+
+      <!-- FORM REGISTRAZIONE QUINDI INDEX 1 -->
+     
+    <div id="registerEmail"> 
+        <div class="container mt-5 border border-5 border-primary rounded">
+            <div class="row">
+              <div class="col text-center">
+                <h2>Registrati</h2>
+                <p>Inserisci la tua email</p>
+                <input id="emailRegistrazione">
+                <br>
+                <button onclick="registrapassword()" class="mt-5">NEXT</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+
+    
+    <!-- SECONDO PASSO INSERISCI PASSWORD DI REGISTRAZIONE-->
+
+
+
+    <div id="registerPassword"> 
+      <div class="container mt-5 border border-5 border-primary">
+          <div class="row">
+            <div class="col text-center">
+              <h2>Registrati</h2>
+              <p>Inserisci la tua password</p>
+              <input id="passwordRegistrazione">
+              <br>
+              <button onclick="registrato()" class="mt-5">NEXT</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+
+  
+      <!-- TI SEI REGISTRATO, COMPLIMENTI-->
+
+      <div id="registrato">
+        <div class="container mt-5 border border-5 border-primary">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Congratulazioni</h2>
+                    <p>Ti sei registrato con successo</p>
+                    
+                    <br>
+                    <button class="mt-5" onclick="registraemail()">Torna indietro</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- chiusura div registrazione-->
+
+
+
+      <!-- SEZIONE LOGIN -->
+
+     
+     <div id="loginEmail">
+        <div class="container mt-5 border border-5 border-primary">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Login</h2>
+                    <p>Inserisci la tua email</p>
+                    <input id="emailLogin" name="login">
+                    <br>
+                    <button onclick="loginPassword()"class="mt-5">NEXT</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- chiusura div registrazione-->
+
+
+
+
+
+
+    <!-- SECONDO PASSO INSERISCI PASSWORD DI LOGIN-->
+
+
+    <div id="loginPassword">
+        <div class="container mt-5 border border-5 border-primary">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Login</h2>
+                    <p>Inserisci la tua password</p>
+                    <input id="passwordLogin" name="login">
+                    <br>
+                    <button onclick="loggato()" class="mt-5">NEXT</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- chiusura div registrazione-->
+
+
+
+
+      <!-- TI SEI LOGGATO, COMPLIMENTI-->
+
+      <div id="loggato">
+        <div class="container mt-5 border border-5 border-primary">
+            <div class="row">
+                <div class="col text-center">
+                    <h2>Congratulazioni</h2>
+                    <p>Ti sei loggato con successo</p>
+                    
+                    <br>
+                    <button class="mt-5" onclick="registraemail()">Torna indietro</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- chiusura div registrazione-->
+
+        
+
+<script src="validate.js"></script>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
